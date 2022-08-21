@@ -1,3 +1,4 @@
+/*** General Styling ***/
 * {
     padding: 0;
     margin: 0;
@@ -6,15 +7,16 @@
 body {
     height: 100vh;
 }
+/*** Navbar ****/
 #navbarBackground {
-    background: rgb(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
+    background: goldenrod;
+    backdrop-filter: blur(5px);
 }
 .motto {
     font-size: 2.5em;
 }
 .section-heading {
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: bolder;
     color: goldenrod
 }
@@ -23,4 +25,66 @@ body {
     height: 30px;
     background: black;
     padding: 2px 5px;
+}
+.fa-graduation-cap, .fa-hotel, .fa-user {
+    background: goldenrod;
+    color: #fff;
+    padding: 20px 20px;
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+.btn-explore {
+    background: goldenrod;
+}
+.space {
+    justify-content: space-between;
+}
+.cta-text {
+    text-transform: uppercase;
+    color: goldenrod;
+    font-size: 2em;
+}
+section {
+    margin-top: 100px;
+}
+#mobile-space {
+    border-right: 1px solid goldenrod;
+}
+.question-mark {
+    background: goldenrod;
+    color:  #f0f0f0;
+    font-size: 1.5em;
+    border-radius: 10px 0 0 10px;
+}
+.enroll-section {
+    background-image: url('../images/contact-bg.jpg');
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: auto;
+   
+}
+/*** Footer Styling ***/
+#footerSection{
+   background-image: url('../images/contact-bg.jpg'); 
+}
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-youtube {
+    background: #fff;
+    color: rgba(0, 0, 73, 0.63);
+    font-size: 1.5em;
+    padding: 15px 15px;
+    margin-left: 5px;
+}
+
+
+@media (max-width: 600px) {
+    #mobile-space {
+        margin-top: 50px;
+        border: none;
+    }
+}
+@media (min-width: 600px) and (max-width: 991px){
+    .call-img {
+        height: 100%;
+    }
 }
